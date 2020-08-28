@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Klasifikasi Pemodelan Bertipe Recall Biased</title>
+</head>
+<body>
+    <h1>Hasil Klasifikasi Pemodelan Bertipe Recall Biased </h1>
+    <p>Durasi marketing = {{ data['duration'] }}</p>
+    <p>Selisih hari semenjak kontak dengan client di campaign marketing terakhir = {{ data['pdays'] }}</p>
+    <p>Jumlah kontak dengan client sebelum marketing saat ini = {{ data['previous'] }}</p>
+    <p>Employment variation rate  = {{ data['emp_var_rate'] }}</p>
+    <p>Euribor 3 month rate = {{ data['euribor3m'] }}</p>
+    <p>Jumlah pegawai = {{ data['nr_employed'] }}</p>
+    <p>Hasil dari campaign marketing sebelumnya (0: Failure; 1: Nonexistent; 2: Success) :  = {{ data['poutcome'] }}</p>
+    <p>Hasil klasifikasi karketing (0: Tidak membuka deposito ; 1: Membuka deposito) = {{ prediksi }}</p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasifikasi Bank Precision Biased</title>
+</head>
+<body>
+    <h1>Klasifikasi Bank Precision Biased</h1>
+
+    <form method="POST" action="http://127.0.0.1:5000/klasifikasi_precision">
+        Durasi marketing (detik) : <input type="number" name="duration"/>
+        <br>
+        Jumlah hari yang telah berlalu semenjak kontak terakhir dengan client terhitung dari campaign marketing sebelumnya (999 jika client tidak dikontak sebelumnya) : <input type="number" name="pdays"/>
+        <br>
+        Jumlah kontak dengan client sebelum campaign marketing saat ini : <input type="number" name="previous"/>
+        <br>
+        Employment variation rate  : <input type="number" name="emp_var_rate"/>
+        <br>
+        Euribor 3 month rate : <input type="number" name="euribor3m"/>
+        <br>
+        Jumlah pegawai : <input type="number" name="nr_employed"/>
+        <br>
+        Hasil dari campaign marketing sebelumnya (0: Failure; 1: Nonexistent; 2: Success) : <input type="number" name="poutcome"/>
+       
+
+        <br>
+        <input type="submit" value="Classify"/>
+    </form>
+</body>
+</html>
